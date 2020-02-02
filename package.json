@@ -1,0 +1,30 @@
+{
+  "name": "@magikcraft/jx",
+  "version": "1.1.0-alpha.1",
+  "description": "The jQuery of Minecraft!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "smaPluginConfig": {
+    "scriptcraft_autoload_dir": "autoload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magikcraft/jx.git"
+  },
+  "keywords": [],
+  "author": "hb432",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Magikcraft/jx/issues"
+  },
+  "homepage": "https://github.com/Magikcraft/jx#readme",
+  "devDependencies": {
+    "@scriptcraft/types": "^1.3.2",
+    "@types/jasmine": "^3.5.2"
+  }
+}
