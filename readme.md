@@ -1,5 +1,9 @@
 # JX - The jQuery of Minecraft
 
+![Test](https://github.com/Magikcraft/jx/workflows/Test/badge.svg?branch=magikcraft-integration)
+
+[![npm version](https://badge.fury.io/js/%40scriptcraft%2Fjx.svg)](https://badge.fury.io/js/%40scriptcraft%2Fjx)
+
 JX is a library of super-powers for developing ScriptCraft Minecraft plugins in JavaScript.
 
 ## Use with Vanilla ScriptCraft
