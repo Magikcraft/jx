@@ -3,7 +3,6 @@ ARG image_tag
 FROM magikcraft/magikcraft:${image_tag}-latest
 
 # Setup the working directory
-RUN mkdir /srv/github-actions-app
 WORKDIR /_server_
 
 RUN mkdir -p scriptcraft-plugins/@magikcraft/jx
