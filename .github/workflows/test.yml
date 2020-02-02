@@ -1,0 +1,31 @@
+name: Test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dockertag:
+          [
+            paper-1.14.2-jdk8,
+            paper-1.14.2-graalvm,
+            paper-1.15.2-jdk8,
+            paper-1.15.2-graalvm,
+            nukkit-589-graalvm,
+            nukkit-589-jdk8,
+          ]
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: npm install
+      - run: npm run build:dist --if-present
+        env:
+          CI: true
+      - name: Run the tests in Docker
+        run: docker build . --file __tests__/Dockerfile --build-arg image_tag=${{matrix.dockertag}} --tag jx:${{matrix.dockertag}}

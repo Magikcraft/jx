@@ -1,6 +1,6 @@
 # This is for CI in GitHub Actions
 ARG image_tag
-FROM magikcraft/minecraft:${image_tag}
+FROM magikcraft/magikcraft:${image_tag}
 
 # Setup the working directory
 RUN mkdir /srv/github-actions-app
