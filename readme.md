@@ -43,4 +43,6 @@ npm install -g generator-sma-plugin
 yo sma-plugin
 ```
 
+## Using JX in your plugin
 
+**Tutorial coming soon**
