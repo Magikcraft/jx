@@ -6,6 +6,8 @@
 
 JX is a library of super-powers for developing ScriptCraft Minecraft plugins in JavaScript.
 
+It is written by [@hb432](https://github.com/hb432/jx). Please make feature requests and report bugs in JX in his repo. This fork packages JX for MagikCraft.
+
 ## Use with Vanilla ScriptCraft
 
 ### Pre-Requisites
